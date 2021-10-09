@@ -1,0 +1,199 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #621402;
+  font-family: 'Roboto', sans-serif;
+  color: #ffffff;
+}
+
+.container {
+  margin: auto;
+  max-width: 1170px;
+}
+
+.header {
+  min-height: 100vh;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%),
+    url('../img/bg.jpg') no-repeat center top / cover;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  margin-left: 17px;
+}
+
+.menu-item {
+  margin-right: 25px;
+}
+
+.menu-link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.avatar {
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  margin-left: 11px;
+}
+
+.film {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.film-title-small {
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.film-title {
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 570px;
+}
+
+.film-trailer {
+  margin: auto;
+}
+
+.film-details {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+}
+
+.time-icon,
+.rating-icon {
+  margin-right: 14px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  margin-left: 34px;
+}
+
+.rating-current {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.session {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 62px;
+  padding-top: 46px;
+  padding-bottom: 63px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.session-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.session-date-block {
+  display: flex;
+}
+
+.session-date-item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.session-month {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.session-day {
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.session-week {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.session-date-item:hover {
+  background-color: #FE8E05;
+  color: #621402;
+}
+
+.select {
+  background-color: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: #ffffff;
+  padding: 18px;
+  margin-top: 13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../img/arrow.svg') no-repeat top 50% right 18px / 14px;
+}
+
+/* удаление стрелки по умолчанию в IE 10 и 11 */
+select::-ms-expand {
+  display: none;
+}
+
+/* Цвет списка для Google Chrome */
+option {
+  color: #ffffff;
+  background-color: rgba(120, 54, 38, 0.8);
+}
+
+.select-cinema {
+  min-width: 470px;
+}
+
+.select-time {
+  min-width: 120px;
+}
